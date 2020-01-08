@@ -1,0 +1,562 @@
+/*
+Tea Round App
+*/
+
+/* @override 
+	http://tearound:8888/style.css
+*/
+
+/* Whitespace Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Images */
+
+a img {
+	border: none;
+	outline: none;
+}
+
+/* Global */
+
+body {
+	color: #fff;
+	font: 11px/18px Arial, sans-serif;
+	background: #362d1b url(images/body.jpg) repeat-x;
+}
+
+#container {
+	position: relative;
+}
+
+.wrap {
+	position: relative;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Head */
+
+#ribbon {
+	height: 100px;
+	color: #efefef;
+	background: url(images/foot.jpg) repeat-x center top;
+	font: 18px Arial, sans-serif;
+	display:inline;
+}
+
+#ribbon a {
+	color: #fff;
+	background-color: #7f7358; /*#f70493 pink #695f48;*/
+	text-decoration: none;
+	padding: 2px 6px;
+}
+
+#ribbon a:hover {
+	color: #fff;
+	background-color: #7f7358;
+	text-decoration: none;
+	padding: 2px 6px;
+}
+#head {
+	height: 130px;
+	background: url(images/glow.jpg) no-repeat center top;
+	display: block;
+}
+
+#head .wrap {
+	height: 90px;
+}
+
+#head h1 a {
+	background: url(images/logo.gif) no-repeat;
+	width: 304px;
+	display: inline;
+	float: left;
+	height: 68px;
+	text-indent: -9999px;
+	overflow: hidden;
+	position: absolute;
+	top: 36px;
+	left: 0;
+}
+
+#head h1 a img {
+	position: relative;
+	left: 10135px;
+}
+
+#head span a {
+	background: url(images/twitter.gif) no-repeat;
+	width: 250px;
+	display: inline;
+	float: left;
+	height: 68px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin-left: 120px;
+	position: absolute;
+	top: 35px;
+	left: 295px;
+}
+
+#head span a img {
+	position: relative;
+	left: 9999px;
+}
+
+#head strong a {
+	background: url(images/appstore.gif) no-repeat;
+	width: 222px;
+	display: inline;
+	float: right;
+	height: 115px;
+	text-indent: -9999px;
+	overflow: hidden;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+
+/* The Awesome */
+
+#theawesome {
+	background: url(images/wallpaper.jpg) repeat-x center top;
+	height: 557px;
+	clear: both;
+}
+
+#theawesome .wrap {
+	height: 557px;
+}
+
+/* @group iPhone */
+
+#iphone {
+	width: 277px;
+	height: 523px;
+	background: url(images/iphone.png) no-repeat;
+	position: absolute;
+	top: 25px;
+	left: -20px;
+}
+
+#iphone .viewport {
+	position: absolute;
+	width: 225px;
+	height: 339px;
+	top: 84px;
+	left: 27px;
+	overflow: hidden;
+}
+
+#iphone .viewport img.menubar {
+	position: absolute;
+	width: 225px;
+	height: 15px;
+	top: 0;
+	left: 0;
+	z-index: 98;
+}
+
+#iphone .viewport .scroll {
+	width: 920px;
+	position: absolute;
+	left: 0;
+	padding-top: 15px;
+}
+
+#iphone img {
+	float: left;
+	display: inline;
+}
+
+#iphone a {
+	position: absolute;
+	top: 35px;
+	left: 212px;
+	z-index: 99;
+}
+
+/* @end */
+
+#intro {
+	display: block;
+	padding-left: 310px;
+	width: 670px;
+	padding-top: 45px;
+}
+
+#intro img {
+	position: relative;
+	margin-left: -15px;
+}
+
+#intro h2 {
+	font: normal normal 30px/32px "Helvetica Neue", Arial;
+	text-indent: -9999px;
+	display: block;
+	overflow: hidden;
+	width: 631px;
+	height: 69px;
+	background: url(images/titles/intro.png) no-repeat;
+	margin-bottom: 30px;
+}
+
+#intro h2 em {
+	font-weight: normal;
+	background-color: #4a4436;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-style: normal;
+}
+
+#steps {
+	position: absolute;
+	left: 310px;
+	bottom: 100px;
+	z-index: 9;
+	height: 110px;
+}
+
+#steps ol {
+	width: 360px;
+	list-style: none;
+}
+
+#steps ol li {
+	font: 16px/20px "Helvetica Neue", Arial;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#steps ol li strong {
+	display: block;
+	font-size: 20px;
+	background: url(images/circle.png) no-repeat;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#steps ol li.step2, #steps ol li.step3, #steps ol li.step4 {
+	display: none;
+}
+
+#switcher {
+	position: absolute;
+	left: 310px;
+	bottom: 22px;
+	width: 360px;
+	height: 32px;
+	background: url(images/steps/switcher.jpg) no-repeat;
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	z-index: 1;
+}
+
+#zoom {
+	z-index: 99;
+}
+
+#switcher ol {
+	width: 360px;
+	z-index: 9;
+	position: relative;
+}
+
+#switcher ol li {
+	float: left;
+	display: block;
+	width: 90px;
+	height: 30px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+#switcher ol li a {
+	width: 90px;
+	display: block;
+	float: left;
+	height: 30px;
+}
+
+#switcher ol li.switch1 a {
+	background-image: url(images/steps/switch1.png);
+}
+
+#switcher ol li.switch2 a {
+	background-image: url(images/steps/switch2.png);
+}
+
+#switcher ol li.switch3 a {
+	background-image: url(images/steps/switch3.png);
+}
+
+#switcher ol li.switch4 a {
+	background-image: url(images/steps/switch4.png);
+}
+
+#switcher #pill {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index: 0;
+}
+
+#kettle {
+	position: absolute;
+	bottom: 15px;
+	right: 0;
+	z-index: 0;
+}
+
+/* Content */
+
+#content {
+	background: url(images/wood.jpg) repeat-x center top;
+	height: 256px;
+	padding-top: 38px;
+	position: relative;
+}
+
+#content .wrap {
+	height: 256px;
+	padding-left: 14px;
+}
+
+/* Updates */
+
+#updates {
+	background: url(images/left-block.jpg) no-repeat;
+	width: 266px;
+	height: 215px;
+	float: left;
+}
+
+/* @group Signup */
+
+#updates .signup {
+	width: 244px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 12px;
+	height: 98px;
+}
+
+#updates .signup h3 {
+	background: url(images/titles/signup.png) no-repeat;
+	display: block;
+	width: 243px;
+	height: 22px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+#updates .signup fieldset {
+	width: 172px;
+	border-style: none;
+	float: left;
+	padding-top: 6px;
+}
+
+#updates .signup fieldset.button {
+	width: 72px;
+	border-style: none;
+	float: left;
+}
+
+#updates .signup fieldset input {
+	background: url(images/input.gif) no-repeat;
+	border-style: none;
+	color: #c9c2b7;
+	padding-top: 7px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	width: 158px;
+	margin-bottom: 7px;
+}
+
+#updates .signup fieldset.button input {
+	border-style: none;
+	color: #c9c2b7;
+	width: 72px;
+	margin-bottom: 0;
+	padding: 0;
+	background-image: none;
+	height: 63px;
+}
+
+
+
+/* @end */
+
+/* @group Feedback */
+
+#updates .feedback {
+	width: 248px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 9px;
+	clear: both;
+}
+
+#updates .feedback h3 {
+	background: url(images/titles/feedback.png) no-repeat;
+	display: block;
+	width: 244px;
+	height: 16px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin-left: 2px;
+	margin-bottom: 6px;
+}
+
+/* @end */
+
+/* Screenshots */
+
+#screenshots {
+	width: 400px;
+	float: left;
+	padding-left: 40px;
+	padding-right: 20px;
+	position: relative;
+}
+
+#screenshots p {
+	font: 20px/24px "Helvetica Neue", Arial;
+	background: url(images/titles/screenshots.png) no-repeat;
+	width: 354px;
+	height: 67px;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+	margin-top: 13px;
+	margin-bottom: 18px;
+}
+
+#screenshots li {
+	float: left;
+	display: inline;
+	padding-right: 22px;
+}
+
+#screenshots li img {
+	
+}
+
+/* We Collaborate */
+
+#wecollaborate {
+	background: url(images/right-block.jpg) no-repeat;
+	width: 194px;
+	height: 197px;
+	float: left;
+	padding-top: 18px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+#wecollaborate h2 a {
+	background: url(images/wecollaborate.png) no-repeat;
+	display: block;
+	width: 191px;
+	height: 62px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+
+#wecollaborate p {
+	padding-bottom: 11px;
+	font: 13px/18px "Helvetica Neue", Arial;
+}
+
+#wecollaborate p a {
+	color: #fff;
+	background-color: #695f48;
+	text-decoration: none;
+	padding: 1px 4px;
+}
+
+#wecollaborate p a:hover {
+	color: #fff;
+	background-color: #7f7358;
+	text-decoration: none;
+	padding: 1px 4px;
+}
+
+/* Footer */
+
+#foot {
+	color: #aaa6a2;
+	font: 12px/18px "Helvetica Neue", Arial;
+	background: url(images/foot.jpg) repeat-x center top;
+}
+
+#foot .wrap {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	height: 18px;
+}
+
+#foot small {
+	font-size: 12px;
+	float: left;
+	display: block;
+	padding-left: 19px;
+	width: 296px;
+}
+
+#foot p {
+	float: left;
+	width: 400px;
+}
+
+#foot strong {
+	float: right;
+	font-weight: normal;
+	font-style: normal;
+	display: block;
+	padding-right: 30px;
+}
+
+#foot strong a {
+	font: italic 14px Georgia;
+	color: #aaa6a2;
+	text-decoration: none;
+}
+
+#foot strong a:hover {
+	color: #fff;
+}
+
+.error {
+	background-color: #ea3c0f;
+	z-index: 999;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 244px;
+	height: 22px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+img#thanks {
+	position: absolute;
+	top: 120px;
+}
