@@ -1,9 +1,5 @@
 
 
-body#layout #search_form,.pagenavi .pages,#navbar,.date-header,.feed-links,.post-location,.post-share-buttons,.post-icons{display: none !important;}
-body#layout #header-wrapper .content {height:40px}
-.section,.widget,.widget-content,body,h1,h2,h3,h4,h5,ul,li,a,p,span,img,dd{margin:0;padding:0;list-style:none;text-decoration:none;border:none;outline:none}
-
 a {
 -webkit-transition-property: color;
 -webkit-transition-duration: 0.25s;
@@ -516,6 +512,12 @@ body {
 	font: 11px/18px Arial, sans-serif;
 	background: #362d1b url(images/body.jpg) repeat-x;
 }
+
+body#layout #search_form,.pagenavi .pages,#navbar,.date-header,.feed-links,.post-location,.post-share-buttons,.post-icons{display: none !important;}
+body#layout #header-wrapper .content {height:40px}
+.section,.widget,.widget-content,h1,h2,h3,h4,h5,ul,li,a,p,span,img,dd{margin:0;padding:0;list-style:none;text-decoration:none;border:none;outline:none}
+
+
 
 #container {
 	position: relative;
