@@ -1,3 +1,5 @@
+(function($){
+
 $(document).ready(function() {
 	
 	$(document).pngFix();
@@ -135,3 +137,4 @@ $(document).ready(function() {
 	);*/
 	
 });
+})(jQuery)
