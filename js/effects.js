@@ -133,6 +133,5 @@ $(document).ready(function() {
 			$('#screenshots a#one img, #screenshots a#two img, #screenshots a#three img').fadeTo("slow", 1.0);
 		}
 	);*/
-$.noConflict();
 });
 
